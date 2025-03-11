@@ -1,0 +1,85 @@
+<!-- 
+ Block Element Tag: <H1> <H2> <H3> <H4> <H5> <H6> <P> <Hr/> <Br/>
+   <Ul><Ol> <Li><Dl> <Dt> <Dd><Ul> <Ol>
+Tag Attribute: Type=”...” Start=”...” Align=”...”
+Inline Element Tag: <I> <Em> <B> <Strong> <Big>
+   <Small> <Sub> <Sup> <U><Ins> <Del> <S> <Mark> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- block element  is take 100% width and throw  next element  to next line -->
+    <h1>😂 Emoji</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6 align="center">heading 6</h6>
+    <p>
+      Lorem, ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit.
+      Atque repudiandae, dolorum, ipsum <br />
+      quam aperiam eaque fugiat sed labore assumenda nisi culpa distinctio ipsa,
+      minus recusandae velit repellendus sequi repellat vitae!
+    </p>
+    <!-- self closing tag -->
+    <hr />
+    <!-- when you use Attributes so you have do in starting angular brackets -->
+
+    <ul type="square">
+      <!-- content -->
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+
+    <!-- align is a Deprecated attribute -->
+    <ol align="center" type="a" start="5">
+      <li>item 1</li>
+      <ol align="end" type="A">
+        <li>sub item 1</li>
+        <li>sub item 2</li>
+        <li>sub item 3</li>
+      </ol>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ol>
+
+    <!-- description list -->
+    <dl>
+      <!-- description term -->
+      <dt>Drinks</dt>
+      <!-- description details -->
+      <dd>Cold drinks</dd>
+      <dd>Tea</dd>
+      <dd>Coffee</dd>
+      <dd>latte</dd>
+      <dd>shakes</dd>
+    </dl>
+
+    <!-- inline element is take space as much as content size and could'nt throw in next line  -->
+    <i>italic tag</i>
+    <i>italic tag 2</i>
+    <br />
+    <em>emphasize tag</em>
+    <b>bold tag </b>
+    <strong> strong tag as it is bold tag</strong>
+    <big>big tag </big>
+    <small>small tag </small>
+    <p>H<sub>2</sub>O</p>
+    <p>3 <sup>3</sup></p>
+    <p>required <sup>*</sup></p>
+    <u>underline</u>
+    <mark>yellow</mark>
+    <s>strike</s>
+    <strike>strike</strike>
+    <del>delete tag</del>
+    <ins>insert tag</ins>
+    <p>water color is <del>blue</del> <ins>transparent</ins></p>
+  </body>
+</html>
