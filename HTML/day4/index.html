@@ -1,0 +1,80 @@
+<!--
+<Form> <Select> <Option> <Text Area>
+<Button><Input Type=”Text, Email, Password, Tel, Color, Range, File, Date, Radio, Checkbox”/>Button
+Tag Attribute : Type=”Reset”, Type=”Submit”Required, Selected Attribute  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="" method="" enctype="">
+      <label for="userName">User Name</label>
+      <input
+        id="userName"
+        type="text"
+        placeholder="Enter your user Name"
+        required
+      />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" placeholder="Enter your email" required />
+      <br />
+      <input type="password" placeholder="Enter your passsword" />
+      <br />
+      <input
+        type="tel"
+        pattern="[0-9]{3}-[4-9]{3}-[0-9]{4}"
+        placeholder="123-456-1235"
+      />
+      <br />
+      <input type="color" />
+      <br />
+      Gender
+      <input name="gender" type="radio" /> Male
+      <input name="gender" type="radio" />Female
+      <br />
+      I agree
+      <input type="checkbox" />
+      <br />
+      Date:
+      <input type="date" />
+      <br />
+      <input type="datetime-local" />
+      <br />
+      <input type="file" />
+      <br />
+      <input type="hidden" />
+      <br />
+      <input type="month" />
+      <br />
+      <input type="number" />
+      <br />
+      skills
+      <input type="range" />
+      <br />
+      <input type="reset" />
+      <br />
+      <input type="submit" />
+      <br />
+      <textarea name="" id="">description:</textarea>
+      <br />
+      <select name="" id="">
+        <option value="volorent">Volorant</option>
+        <option value="pubg">Pubg</option>
+        <option value=" apex lengends">Apex Legends</option>
+        <option selected value="fortnite">Fortnite</option>
+        <option value="dota2">Dota 2</option>
+      </select>
+
+      <input type="button" value="Button" />
+      <button>Submit2</button>
+    </form>
+
+    <button>Submit 3</button>
+  </body>
+</html>
