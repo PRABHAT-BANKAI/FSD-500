@@ -1,0 +1,114 @@
+<!-- <Table> <Tr> <Th> <Td> <Caption><Thead><Tbody><Tfoot>Table Tag Attribute : Cellspacing=”...” Cellpadding=”...” Border=”...” Width=”...” Height=”...” Bgcolor=”...”Td, Th Tag Attribute : Colspan, Rowspan, Bgcolor -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Table</h1>
+
+    <table
+      border=""
+      cellspacing="10px"
+      cellpadding="5px"
+      width="500px"
+      height="600px"
+      bgcolor="yellow"
+    >
+      <caption>
+        Result
+      </caption>
+      <thead>
+        <tr bgcolor="orange">
+          <th>S.no</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th bgcolor="aqua">Subject</th>
+          <th>extra column</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td colspan="2">batman</td>
+          <td>34</td>
+          <td rowspan="2">science</td>
+        </tr>
+
+        <tr>
+          <td bgcolor="green">2</td>
+          <td>superman</td>
+          <td>28</td>
+          <td>history</td>
+        </tr>
+        <tr>
+          <td>3</td>
+
+          <td>42</td>
+          <td colspan="3">math</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total subject:</td>
+          <td colspan="2">3</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table border="">
+      <thead>
+        <tr>
+          <th colspan="2">Programing lang</th>
+          <th>markup lang</th>
+        </tr>
+        <tr>
+          <td colspan="2">JavaScript</td>
+          <td>xml</td>
+        </tr>
+        <tr>
+          <td colspan="2">C</td>
+          <td>html</td>
+        </tr>
+      </thead>
+    </table>
+
+    <table bgcolor="purple" width="700px">
+      <tr>
+        <td>First Name</td>
+        <td><input type="text" />(max 30 characters a-z and A-Z)</td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td><input type="text" />(max 30 characters a-z and A-Z)</td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td><input type="date" /></td>
+      </tr>
+      <tr>
+        <td>Qualification</td>
+        <td>
+          <table border="">
+            <tr>
+              <td>examination</td>
+              <td>board</td>
+              <td>percentage</td>
+              <td>year of passing</td>
+            </tr>
+            <tr>
+              <td>ssc</td>
+              <td>cbse</td>
+              <td><input type="text" /></td>
+              <td><input type="date" /></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
