@@ -1,0 +1,50 @@
+<!-- 
+ Inline Css, Internal Css, External Css @Media, @Key
+Frames Details: <Tag>, .Class, #IdUse Of Inline Css -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- priority level => inline>internal>external -->
+    <!-- priority level selectors => id>class>tag name>universal selector * -->
+    <style>
+      .para {
+        color: aqua;
+      }
+      p {
+        color: blue;
+      }
+
+      .text {
+        color: green;
+      }
+      #sentence {
+        color: yellow;
+      }
+      .bgcolor{
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS (Cascading Style Sheets)</h1>
+    <!-- inline css -->
+    <h1 style="color: red">hello</h1>
+    <p>internal css</p>
+    <p class="para">hi from paragraph tag</p>
+    <span>External css</span>
+    <article class="text bgcolor">hello from class selector</article>
+    <p id="sentence">hello from id selector (id always unique)</p>
+
+    <i>italic tag</i>
+    <b>bold tag</b>
+    <u>underline tag</u>
+    <sub>subscript tag</sub>
+    <sup>superscript tag</sup>
+    <mark>mark tag</mark>
+  </body>
+</html>

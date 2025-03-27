@@ -1,0 +1,17 @@
+span {
+  color: purple;
+}
+/* h1 {
+  color: "black";
+} */
+
+/* universal selector */
+* {
+  color: green;
+}
+u{
+  color: rgb(93, 224, 97);
+}
+b{
+  color:#4f80bc
+}
