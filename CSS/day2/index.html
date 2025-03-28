@@ -1,0 +1,120 @@
+<!-- 
+Use Of Internal Cssfont
+Family-Font, Font-Size, Color, Font-Weight, Text-Align, Line-Height, Letter-Spacing, Word-Spacing, Text-Decoration, Font-Style, Text- Transform, Text-Indent
+Online Font Attachment
+
+userName//camelCase
+userProductOfClothes
+
+user_name// 
+user_product_of_clothes // snake case
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Noto+Sans+Hanunoo&family=Rubik+Bubbles&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Noto+Sans+Hanunoo&family=Pacifico&family=Rubik+Bubbles&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .text {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .fontSize {
+        font-size: 55px;
+      }
+      .fontWeight {
+        font-weight: 900;
+      }
+      .align-sentence {
+        text-align: center;
+      }
+      #line {
+        background-color: yellow;
+        line-height: 45px;
+      }
+      .spacing {
+        letter-spacing: 25px;
+      }
+      #word {
+        word-spacing: 25px;
+      }
+      .decoration {
+        text-decoration: underline;
+      }
+      .style {
+        font-style: italic;
+      }
+      .transform {
+        /* !important cant overlap css property */
+        text-transform: uppercase !important;
+        text-transform: lowercase;
+      }
+      .indent {
+        text-indent: 25px;
+      }
+      .dancing-script-volrent {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .bungee-tint-regular {
+        font-family: "Bungee Tint", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .pacifico-regular {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="text style">hi from CSS</p>
+    <p class="fontSize style">font size</p>
+    <p class="fontWeight">Font-Weight</p>
+    <p class="align-sentence">text align</p>
+    <p id="line" class="transform indent">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+      exercitationem sunt id maxime et ut enim, ipsam vero asperiores
+      perspiciatis aliquam, iusto placeat, ducimus aperiam consequatur. Eligendi
+      voluptate provident architecto.
+    </p>
+    <p class="spacing">letter spacing</p>
+
+    <p id="word" class="decoration">word spacing from css sentences</p>
+
+    <!-- for online font attachment using googleFont -->
+    <p class="bungee-tint-regular">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+      exercitationem sunt id maxime et ut enim, ipsam vero asperiores
+      perspiciatis aliquam, iusto placeat, ducimus aperiam consequatur. Eligendi
+      voluptate provident architecto.
+    </p>
+    <p class="pacifico-regular">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit ea
+      nesciunt cupiditate accusamus mollitia illum quasi, non necessitatibus
+      vero praesentium voluptatem minus labore! Consequuntur, ad explicabo nam
+      voluptatum delectus cum.
+    </p>
+  </body>
+</html>
