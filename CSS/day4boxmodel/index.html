@@ -1,0 +1,80 @@
+<!-- Box Modal
+Width, Height, Background-Color
+Content, Padding, Border, Margin
+Box-Sizing
+Display Property
+Border, Border-Radius
+Block, Inline, Inline-Block, None -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(232, 221, 96);
+        /* padding-left: 25px;
+        padding-top: 35px;
+        padding-right: 45px;
+        padding-bottom: 5px; */
+        /* top bottom : left right */
+        padding: 30px 70px;
+        /* padding: 55px 110px 145px 210px; */
+        /* border: 1px solid black; */
+        /* margin: 20px;
+        margin: 100px 200px 150px 30px; */
+        /* border-width: 10px; */
+        /* border-style: dotted;
+        border-color: blue; */
+        /* border-left: 1px solid red;
+        border-right: 2px solid green;
+        border-top: 3px solid rgb(22, 87, 178);
+        border-bottom: 4px solid rgb(255, 0, 102); */
+        /* bydefault content box property */
+        /* box-sizing: content-box; */
+        box-sizing: border-box;
+        /* display remove content with space */
+        /* display: none; */
+        /* visibility hidden remove content but space will remain */
+        /* visibility: hidden; */
+        /* display: inline; */
+
+        border: 1px solid black;
+      }
+      .magic-box {
+        height: 300px;
+        width: 400px;
+        border: 1px solid black;
+        background-color: greenyellow;
+        /* border-radius: 115px */
+        border-radius: 69% 31% 0% 100% / 45% 100% 0% 55%;
+      }
+      span {
+        color: rgb(212, 133, 22);
+        background-color: yellow;
+        padding: 45px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- <p>hi from box model</p> -->
+    </div>
+    <div class="box">
+      <!-- <p>hi from box model</p> -->
+    </div>
+
+    <div class="magic-box"></div>
+    <article>
+      Lorem ipsum dolor sit amet <span>consectetur</span>, adipisicing elit.
+      Consequuntur delectus eius molestiae. Est laboriosam minima, molestias a
+      iusto voluptas delectus odio numquam veniam obcaecati recusandae eaque
+      soluta corrupti, ratione atque?
+    </article>
+  </body>
+</html>
