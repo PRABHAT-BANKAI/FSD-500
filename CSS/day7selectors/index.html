@@ -1,0 +1,120 @@
+<!-- 
+ 	
+Selector div,P, Div P, Div > P:
+
+
+
+First Letter, :First Line, :First Child, :LastChild, :Nth Child(), :Nth Last Child(), ::Selection
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: red;
+      }
+
+      /* Descendant Combinator
+The descendant combinator matches all elements that are descendants of a specified element */
+      /* .container p {
+        color: green;
+      } */
+
+      /* Child Combinator (>)
+The child combinator selects all elements that are the children of a specified element. */
+      .container > p {
+        color: blue;
+      }
+
+      /* Next Sibling Combinator (+)
+The next sibling combinator is used to select an element that is directly after another specific element. */
+      h1 + h2 {
+        color: blueviolet;
+      }
+      /* 
+Subsequent-sibling Combinator (~)
+The subsequent-sibling combinator selects all elements that are next siblings of a specified element.
+*/
+      h2 ~ h3 {
+        color: darkgrey;
+      }
+      /* 
+      Pseudo-Elements
+A CSS pseudo-element is used to style specific parts of an element. */
+      #text::first-letter {
+        font-size: 34px;
+      }
+      #text::first-line {
+        background-color: yellow;
+      }
+
+      /*  Pseudo-classes 
+      A pseudo-class is used to define a special state of an element.
+      */
+      button:hover {
+        background-color: yellow;
+      }
+      p:first-child {
+        color: rgb(5, 139, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>first paragraph tag</p>
+      <div>
+        <p>div paragraph tag 1</p>
+      </div>
+      <div>
+        <p>div paragraph tag 2</p>
+      </div>
+      <div>
+        <p>div paragraph tag 3</p>
+      </div>
+    </div>
+
+    <h1>heading1</h1>
+    <h2>heading3</h2>
+    <h2>heading 3</h2>
+    <h3>heading4</h3>
+    <h4>heading 5</h4>
+    <h1>heading1</h1>
+    <h2>heading3</h2>
+    <h2>heading 3</h2>
+    <h3>heading4</h3>
+    <h4>heading 5</h4>
+    <p id="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam ut
+      veritatis odio itaque soluta debitis suscipit deserunt natus recusandae
+      corrupti eum, voluptatibus consequatur asperiores id inventore vitae nam
+      labore.
+    </p>
+
+    <button>click me</button>
+
+    <div class="sec-container">
+      <p>second child</p>
+      <p>first CHild</p>
+
+      <div>
+        <p>first child of div</p>
+        <p>second child</p>
+      </div>
+      <div>
+        <p>first child of div</p>
+        <p>second child</p>
+      </div>
+      <div>
+        <p>first child of div</p>
+        <p>second child</p>
+      </div>
+    </div>
+  </body>
+</html>
