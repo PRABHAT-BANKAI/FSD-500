@@ -1,0 +1,37 @@
+<!--Scale, Rotate, Skew, Translate  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #3498db;
+        /* transform: rotate(160deg);
+        transform: skew(65deg); */
+        /* transform: scale(2.5);  zoom out zoom in */
+        /* transform: translate(-10%,-10%); */
+      }
+
+      .box:hover {
+        transform: rotate(1200deg);
+        transition: 5s;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p style="font-size: 45px">magic box</p>
+    </div>
+  </body>
+</html>
