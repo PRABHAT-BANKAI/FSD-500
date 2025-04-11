@@ -61,8 +61,18 @@ A CSS pseudo-element is used to style specific parts of an element. */
       button:hover {
         background-color: yellow;
       }
-      p:first-child {
+      /* p:first-child {
         color: rgb(5, 139, 0);
+      } */
+      p:last-child {
+        color: darkmagenta;
+      }
+      p:nth-child(2) {
+        color: rgb(247, 6, 50);
+      }
+      .lastChild::selection {
+        color: red;
+        background-color: yellow;
       }
     </style>
   </head>
@@ -77,6 +87,7 @@ A CSS pseudo-element is used to style specific parts of an element. */
       </div>
       <div>
         <p>div paragraph tag 3</p>
+        <p>hello</p>
       </div>
     </div>
 
@@ -116,5 +127,35 @@ A CSS pseudo-element is used to style specific parts of an element. */
         <p>second child</p>
       </div>
     </div>
+
+    <div class="last-cointainer">
+      <p>first child</p>
+      <p>first child</p>
+      <div>
+        <p>first child of div</p>
+        <p>second child</p>
+        <p>third paragraph</p>
+      </div>
+      <div>
+        <p>first child of div</p>
+        <p>second child</p>
+        <p>third paragraph</p>
+      </div>
+      <div>
+        <p>first child of div</p>
+        <p>second child</p>
+        <p>third paragraph</p>
+      </div>
+    </div>
+
+    <p class="lastChild">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique
+      dolor doloribus veritatis, amet ab, in quibusdam tempora dicta ut quisquam
+      ullam, voluptates inventore vel quae eaque minus ipsam exercitationem?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+      officiis. Recusandae iste amet fugit ratione. Voluptate perferendis minus,
+      totam, mollitia eligendi earum dolor, quidem voluptatum magnam ad maiores.
+      Eaque, nihil?
+    </p>
   </body>
 </html>

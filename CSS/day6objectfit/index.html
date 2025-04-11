@@ -1,0 +1,56 @@
+<!--
+Calc()
+Image Attach In Html(Object-Fit, Object Position)  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 70px;
+        background-color: blue;
+      }
+      section {
+        background-color: yellow;
+        height: calc(100vh - 70px);
+      }
+      img {
+        object-fit: contain;
+        object-fit: cover;
+        /* object-position: left; */
+       
+      }
+      .card{
+        border: 5px solid rgb(219, 17, 17);
+        width: 500px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <section>
+      <img
+        src="./Bag to Briefcase_Expert Sesion.jpeg"
+        height="300px"
+        width="800px"
+        alt=""
+      />
+    </section>
+    <div class="card">
+      <img src="./Bag to Briefcase_Expert Sesion.jpeg" width="200px" alt="" />
+      <img
+        src="https://thumbs.dreamstime.com/z/two-cute-pandas-cuddle-playfully-one-panda-rests-its-head-partner-s-tummy-adorable-cartoon-anime-art-319449582.jpg?ct=jpeg"
+        alt=""
+        width="300px"
+      />
+    </div>
+  </body>
+</html>
