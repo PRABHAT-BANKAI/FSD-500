@@ -1,0 +1,99 @@
+<!--
+absoulte position
+relative position
+static position
+fixed position
+sticky position 
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        position: absolute;
+        /* after giving position we can apply top bottom left right */
+        right: 20px;
+        bottom: 0;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+     
+      }
+      .main-container {
+        width: 500px;
+        height: 500px;
+        background-color: yellow;
+        position: relative;
+        z-index: -5;
+      }
+
+      .outer-container {
+        width: 700px;
+        height: 700px;
+        background-color: rgb(35, 77, 119);
+        position: relative;
+      }
+      .relative {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+        top: 0;
+        left: 50%;
+      }
+      .fixed {
+        width: 120px;
+        height: 120px;
+        background-color: rgb(0, 208, 255);
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+      }
+      .extra-container{
+        height: 700px;
+        width: 500px;
+        background-color: skyblue;
+      }
+      .extra-container2{
+        height: 900px;
+        width: 800px;
+        background-color: rgb(136, 22, 148);
+      }
+      .sticky{
+        background-color: crimson;
+        position: sticky;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Positions</h1>
+    <div class="outer-container">
+      <div class="main-container">
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="relative">relative postion</div>
+
+    <div class="fixed">fixed postion</div>
+
+
+    <div class="extra-container">
+      <div class="sticky">postion stickey</div>
+    </div>
+    <div class="extra-container2"></div>
+  </body>
+</html>
