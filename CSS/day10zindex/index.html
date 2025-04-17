@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main-container {
+        height: 600px;
+        width: 600px;
+        background-color: #93892b;
+        position: relative;
+        z-index: -6;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+      }
+      .box1 {
+        background-color: #ff0000;
+        top: 100px;
+        left: 100px;
+        z-index: 10;
+      }
+      .box2 {
+        background-color: #00ff00;
+        top: 130px;
+        left: 130px;
+      }
+      .box3 {
+        background-color: #0000ff;
+        top: 160px;
+        left: 160px;
+      }
+      .box4 {
+        background-color: #ffff00;
+        top: 190px;
+        left: 190px;
+        z-index: -4;
+      }
+      .box5 {
+        background-color: #ff00ff;
+        top: 220px;
+        left: 220px;
+        z-index: -5;
+      }
+      .text {
+        background-color: aqua;
+        height: 100px;
+        width: 300px;
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+      .image-card {
+        height: 300px;
+        width: 300px;
+        border: 5px solid black;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .btn {
+        height: 50px;
+        width: 100px;
+        background-color: #ff0000;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        margin: auto;
+        padding: 10px 15px;
+        transition: height 2s, width 1s ,transform 5s;
+      
+      }
+      .btn:hover {
+        background-color: #ffff00;
+        height: 70px;
+        width: 120px;
+        color: black;
+        font-size: 25px;
+        border: 1px solid green;
+        transform: rotate(1200deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box1 box"></div>
+      <div class="box2 box"></div>
+      <div class="box3 box"></div>
+      <div class="box4 box"></div>
+      <div class="box5 box"></div>
+    </div>
+    <div class="text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, pariatur
+      sequi rem vero neque facere suscipit, illo et alias libero architecto
+      error. Dicta nihil blanditiis quibusdam vero porro praesentium inventore.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi
+      in omnis, eum doloremque rerum. Voluptatibus repellat quis autem deleniti
+      vitae voluptas pariatur minus, dolorem quod maiores corrupti fuga nam!
+    </div>
+
+    <div class="image-card">
+      <img src="./Piyush sir (3).jpg" alt="" height="100% " width="100%" />
+    </div>
+
+    <div class="btn">click me</div>
+  </body>
+</html>
