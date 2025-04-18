@@ -1,0 +1,68 @@
+<!-- Display Flex (Parent Property)
+Justify-Content (Flex-Start, Flex-End, Center, Space-Between, Space-Around, Space-Evenly)
+Align-Items (Stretch, Center, Flex-Start, Flex-End, Baseline)
+Align-Content (Stretch, Center, Flex-Start, Flex-End, Space-Between, Space-Around, Space-Evenly) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main-container {
+        width: 100%;
+        height: 400px;
+        background-color: yellow;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        justify-content: flex-end;
+        justify-content: space-between;
+        justify-content: flex-end;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
+        align-items: baseline;
+      }
+      .box {
+        width: 100px;
+   
+        border: 1px solid black;
+      }
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        background-color: green;
+      }
+      .box3 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Display flex is a one dimensional layout it will help to make website
+      responsive from rows and columns
+    </p>
+    <img
+      src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox/flex_terms.png"
+      alt=""
+    />
+
+    <div class="main-container">
+      <div class="box box1">1</div>
+      <div class="box box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        vitae amet recusandae laudantium! Eos modi obcaecati, iste tempora
+
+      </div>
+      <div class="box box3">1</div>
+    </div>
+  </body>
+</html>
