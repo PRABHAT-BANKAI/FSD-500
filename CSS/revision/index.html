@@ -1,0 +1,88 @@
+<!-- Display Flex (Parent Property)Display: Flex
+
+FlexDirection (Row, Row Reverse, Column, Column Reverse)
+
+Flex Wrap (Nowrap, Wrap, Wrap Reverse)
+
+Flex Flow (Flex Direction Flex Wrap)
+
+Justify-Content (Flex-Start, Flex-End, Center, Space-Between, Space-Around, Space-Evenly)
+Align-Items (Stretch, Center, Flex-Start, Flex-End, Baseline)
+
+Align-Content (Stretch, Center, Flex-Start, Flex-End, Space-Between, Space-Around, Space-Evenly)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 600px;
+        background: yellow;
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: column wrap; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* align-items: baseline; */
+        flex-wrap: wrap;
+        align-content: space-between;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+      .box1 {
+        background-color: aqua;
+      }
+      .box2 {
+        background-color: rgb(0, 255, 26);
+      }
+      .box3 {
+        background-color: rgb(255, 119, 0);
+      }
+      .box4 {
+        background-color: rgb(147, 19, 186);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1 box"></div>
+      <div class="box2 box"></div>
+      <div class="box3 box"></div>
+      <div class="box4 box"></div>
+      <div class="box1 box"></div>
+      <div class="box2 box"></div>
+      <div class="box3 box"></div>
+      <div class="box4 box"></div>
+      <div class="box1 box"></div>
+      <div class="box2 box"></div>
+      <div class="box3 box"></div>
+      <div class="box4 box"></div>
+      <div class="box1 box"></div>
+      <div class="box2 box"></div>
+      <div class="box3 box"></div>
+      <div class="box4 box"></div>
+      <div class="box1 box"></div>
+      <div class="box2 box"></div>
+      <div class="box3 box"></div>
+      <div class="box4 box"></div>
+    </div>
+  </body>
+</html>
