@@ -1,0 +1,64 @@
+<!-- Display Flex (Child Property)
+Flex-Basis, Flex-Grow, Flex-Shrink, Order
+Align-Self (Stretch, Center, Flex-Start, Flex-End, Baseline) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        height: 600px;
+        background-color: yellow;
+      }
+      .box {
+       
+        width: 100px;
+      }
+
+      .box1 {
+        background-color: green;
+        /* flex-basis: 300px; */
+        /* flex-grow: 1; */
+        order: 5;
+        align-self: stretch;
+      }
+      .box2 {
+        background-color: rgb(0, 119, 128);
+        /* flex-grow: 1; */
+        order: 3;
+        align-self: center;
+      }
+      .box3 {
+        background-color: rgb(49, 192, 73);
+        flex-shrink: 3;
+        order: 2;
+        align-self: baseline;
+      }
+      .box4 {
+        background-color: rgb(23, 138, 73);
+        /* flex-grow: 4; */
+        order: -1;
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">
+        3 Lorem ipsum dolor sit amet c. Consectetur ex totam rem, repudiandae
+        tempora blanditiis quod ea.
+      </div>
+      <div class="box box4">4</div>
+    </div>
+  </body>
+</html>
