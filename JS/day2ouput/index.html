@@ -1,0 +1,35 @@
+<!-- Output show Method ,console.log, Document write, Alert ,Inner HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+
+    <p id="text"></p>
+    <div id="cont"></div>
+
+    <script>
+      // to run javascript code
+      console.log("hello world ");
+      console.log("javascript");
+      document.write("<h2> learning javascript</h2>"); //string '' ,""  ,``
+      document.write("second line");
+      // alert("reminder for javascript");
+
+      document.getElementById("text").innerText = "gta 6";
+      document.getElementById("cont").innerHTML =
+        "<h1 class='heading'> valorant</h1>";
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
