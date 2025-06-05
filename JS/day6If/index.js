@@ -85,7 +85,7 @@ if (a > b) {
 
 
 
-if(email== "asd@gmail.com" && password == 2345){
+if(email== "asd@gmail.com" || password == 1345){
 
   console.log("login successfull")
 }else{
