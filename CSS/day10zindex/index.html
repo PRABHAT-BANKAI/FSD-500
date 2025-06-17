@@ -74,8 +74,7 @@
         font-size: 20px;
         margin: auto;
         padding: 10px 15px;
-        transition: height 2s, width 1s ,transform 5s;
-      
+        transition: height 2s, width 1s, transform 5s;
       }
       .btn:hover {
         background-color: #ffff00;
@@ -86,9 +85,36 @@
         border: 1px solid green;
         transform: rotate(1200deg);
       }
+      .button-login {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        padding: 40px 80px;
+        border-radius: 21px;
+      }
+      .button-login::before {
+        content: "⬅️";
+        background-color: green;
+      }
+      .button-login::after {
+        content: "➡️";
+        background-color: green;
+      }
+
+      .button-login:hover::before {
+        content: "🙂";
+        background-color: yellow;
+      }
+      .button-login:hover::after {
+        content: "🤑";
+        background-color: yellow;
+      }
     </style>
   </head>
   <body>
+    <!-- Before, After, Transition & Hover::Before, ::Aftertransition Duration,
+     Timing Function, Delay, Property:Hover, :Focus -->
+
     <div class="main-container">
       <div class="box1 box"></div>
       <div class="box2 box"></div>
@@ -110,5 +136,6 @@
     </div>
 
     <div class="btn">click me</div>
+    <div class="button-login">login</div>
   </body>
 </html>
