@@ -46,4 +46,39 @@ console.log(game)
 
 
 
-// String.methods "hello world"
+// String.methods "hello world"// slice,toUpperCase, toLowerCase, trim,split
+
+
+let string = "            hello world             "
+
+
+
+// touppercase
+
+// let storeString = string.toUpperCase()
+console.log(string.trim())// trim remove extra space in start and end
+
+
+// split is a method of string  return array
+
+
+let name = "batman-superman-thor-lokey-ironmen-hulk-captainAmerica"
+
+let nameOfArray = name.split(" ")
+console.log(nameOfArray)
+
+
+
+
+//slice  // slice is not changing original array // last index isnot count to get in slice 
+
+
+let array5 = ["pubg", "csgo", "volrent", "gta6", "uncharted ", "batman","needforspeed"]
+
+
+//.slice(startingindex,last index )
+
+
+let store  = array5.slice(1,4)
+
+console.log(store)
