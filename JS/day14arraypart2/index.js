@@ -2,7 +2,7 @@
 
 //map
 
-let array = [12, 43, 77, 56, 99, 1, 66, 55, 33, 11, 22];
+let array = [12, 43, 77, 56, 99, 1, 43, 55, 33, 11, 22];
 
 //map
 // 1step new array create
@@ -31,7 +31,7 @@ let store = array.forEach((item) => {
 
 console.log(sum);
 
-let data = [12, 88, 95, 4, 13,45,77,56,77,89,98];
+let data = [12, 88, 95, 4, 13, 45, 77, 56, 77, 89, 98];
 /* for (let i = 0; i < data.length; i++) {
   if (data[i] % 2 == 1) {
     console.log(data[i]);
@@ -39,6 +39,28 @@ let data = [12, 88, 95, 4, 13,45,77,56,77,89,98];
 }
  */
 
-for(let i = data.length-1; i >= 0; i--){
+for (let i = data.length - 1; i >= 0; i--) {
   console.log(data[i]);
 }
+
+let result2 = array.indexOf(99);
+console.log(result2);
+
+let result3 = array.findIndex((item) => item > 55);
+console.log(result3);
+
+let string = "javascript";
+
+let result5 = string.includes("avaj");
+console.log(result5);
+let result4 = array.includes(43);
+console.log(result4);
+
+let array2 = [12, 4, 5, 6, 8, 7, 28, 78, 88];
+
+let result6 = array2.every((item) => item > 12);
+
+console.log(result6);
+
+let result7 = array.some((item) => item > 155);
+console.log(result7);
