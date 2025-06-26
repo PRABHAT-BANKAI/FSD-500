@@ -1,0 +1,51 @@
+<!-- // DOM HTML DOM Changed query Selector and querySelectorsAll AddEventListner
+//document object model (dom) // The DOM represents a document with a logical
+tree. Each branch of the tree ends in a node, and each node contains objects.
+DOM methods allow programmatic access to the tree. With them, you can change the
+document's structure, style, or content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Dom</h1>
+    <p id="text"></p>
+    
+    <p class="text-class"></p>
+    <p class="text-class"></p>
+    <p class="text-class"></p>
+    <p class="text-class"></p>
+    <p class="text-class"></p>
+    <p class="text-class"></p>
+
+    <h2>tagName1</h2>
+    <h2>tagName2</h2>
+
+    <script>
+      let tagData = document.getElementsByTagName("h2");
+      console.log(tagData, "tagData");
+      let text = document.getElementById("text");
+      console.log(text, "byId");
+      let textClass = document.getElementsByClassName("text-class");
+      console.log(textClass, "byclass");
+      text.innerText = "document object model";
+
+      // textClass[0].innerText = "get element by class1";
+      // textClass[1].innerText = "get element by class2";
+      for(let i=0;i<textClass.length;i++){
+        textClass[i].innerText = i+1
+      }
+
+      tagData[0].style.color = "red";
+      tagData[1].style.backgroundColor = "yellow";
+    </script>
+  </body>
+</html>
