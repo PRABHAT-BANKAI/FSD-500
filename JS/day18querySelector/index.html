@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .color1 {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 id="head">All queryselector with some example</h1>
+
+    <h1 class="text2">heading 1</h1>
+    <p class="text2">paragraph tag</p>
+    <span> span tag</span> -->
+
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <button id="btn">Change into text</button>
+
+    <div class="main-container"></div>
+    <div class="color1"></div>
+    <button class="button">Color gen</button>
+    <script>
+      // let text = document.querySelector("#head");
+      // let text2 = document.querySelectorAll(".text2");
+      // console.log(text);
+      // console.log(text2);
+
+      let data = document.querySelectorAll("p"); //array
+      let btn = document.querySelector("#btn");
+      let mainContainer = document.querySelector(".main-container");
+      let colorBtn = document.querySelector(".button");
+      let divContainer = document.querySelector(".color1");
+      let array = ["one", "two", "three", "four", "five"]; //array
+
+      // let para = document.createElement("p");//create element in javascript
+      // para.innerText = "create element ";// update with text
+      // mainContainer.append(para);// for showing in html i have append in main container to show in html for paragraph tag
+      let para = document.createElement("p");
+      array.forEach((item) => {
+        para.innerText = item; // 1 //2//three/four/five
+
+        mainContainer.append(para);
+      });
+
+      btn.addEventListener("click", () => {
+        //callback function behaviour
+        for (let i = 0; i < data.length; i++) {
+          data[i].innerText = array[i];
+          data[i].style.color = "red";
+        }
+      });
+
+      colorBtn.addEventListener("click", () => {
+        let number = Math.floor(Math.random() * 10); // 444.1232352
+        let number2 = Math.floor(Math.random() * 10);
+        let number3 = Math.floor(Math.random() * 10);
+        let number4 = Math.floor(Math.random() * 10);
+        console.log(number);
+        divContainer.style.backgroundColor = `#${number}${number2}${number3}${number4}`;
+      });
+    </script>
+  </body>
+</html>
