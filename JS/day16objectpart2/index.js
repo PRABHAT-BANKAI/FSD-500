@@ -59,7 +59,7 @@
 let numbers = [12, 44, 3, 5, 6];
 
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 2 == 1) {
+  if (i % 2 == 1) {
     console.log(numbers[i]);
   }
 }
