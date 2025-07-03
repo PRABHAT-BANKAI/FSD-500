@@ -45,9 +45,13 @@ function Employee(userName, age, organization) {
   this.name = userName;
   this.age = age;
   this.organization = organization;
-  this.show = function () {
-    console.log(this.name);
+
+  this.money = function (amount) {
+    console.log(amount);
   };
+}
+Employee.prototype.show = function(){// show same space for every user 
+   console.log(this.name);
 }
 
 let henil = new Employee("henil", 12, "bopal");
@@ -57,6 +61,17 @@ let mokshil = new Employee("mokshil", 12, "paldi");
 console.log(henil);
 console.log(ved);
 console.log(mokshil);
+henil.show()
 henil.show();
 ved.show();
 mokshil.show();
+mokshil.money(2000);
+
+
+
+let array1 = [1,2]
+let array2 = [2,3]
+
+console.log(array1.map == array2.map)
+
+console.log(henil.show == mokshil.show)
