@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #text {
+        text-align: center;
+      }
+      .box {
+        margin: auto;
+        width: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="text"></h1>
+    <div>
+      <div class="box">
+        <button id="back">back</button> <button id="next">next</button>
+      </div>
+    </div>
+
+    <script>
+      let arr = ["javascript", "HTML", "React", "css"];
+      let text = document.querySelector("#text");
+      let count = 0;
+      text.innerText = arr[count];
+      let back = document.querySelector("#back");
+      let next = document.querySelector("#next");
+
+      next.addEventListener("click", () => {
+        count++;
+        if (count == arr.length) {
+          count = 0;
+        }
+
+        text.innerText = arr[count];
+        //image.src = arr[0]
+      });
+      back.addEventListener("click", () => {
+        if (count == 0) {
+          count = arr.length;
+        }
+        count--;
+
+        text.innerText = arr[count];
+      });
+    </script>
+  </body>
+</html>
