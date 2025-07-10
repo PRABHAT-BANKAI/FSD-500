@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>SignUp Page</h1>
+    <form action="">
+      <div>
+        <label for=""
+          >Name:
+          <input id="userName" type="text" onkeyup="userFunVal()" />
+        </label>
+        <p class="err1"></p>
+      </div>
+
+      <div>
+        <label for=""
+          >Email:
+          <input type="email" id="email" onkeyup="emailFunVal()" />
+        </label>
+        <p class="err2"></p>
+      </div>
+
+      <button>Submit</button>
+    </form>
+
+    <script>
+      function userFunVal() {
+        let userName = document.querySelector("#userName");
+        let err1 = document.querySelector(".err1");
+        if (!userName.value) {
+          err1.innerText = "Invalid user Name";
+          err1.style.color = "red";
+        } else {
+          err1.innerText = "";
+          err1.style.color = "none";
+        }
+      }
+
+      function emailFunVal() {
+        let email = document.querySelector("#email");
+        let err2 = document.querySelector(".err2");
+        let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!regex.test(email.value)) {
+          err2.innerText = "Invalid email";
+          err2.style.color = "red";
+        } else {
+          err2.innerText = "";
+          err2.style.color = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
