@@ -23,17 +23,48 @@
         </label>
         <p class="err2"></p>
       </div>
+      <div>
+        <label for=""
+          >Password:
+          <input type="password" id="password" onkeyup="passwordFunVal()" />
+        </label>
+        <p class="err3"></p>
+      </div>
 
-      <button>Submit</button>
+      <button class="btn">Submit</button>
     </form>
 
     <script>
+      let form = document.querySelector("form");
+      let userName = document.querySelector("#userName");
+      let email = document.querySelector("#email");
+      let password = document.querySelector("#password");
+      let validation = true;
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // helps in cannot refresh the page
+        let validation = valFun();
+        if (validation) {
+          userName.innerHTML = "";
+          email.innerHTML = "";
+          password.innerHTML = "";
+          alert("login successfully")
+        }
+      });
+
+      function valFun() {
+        userFunVal();
+        emailFunVal();
+        passwordFunVal();
+        return validation;
+      }
+
       function userFunVal() {
-        let userName = document.querySelector("#userName");
         let err1 = document.querySelector(".err1");
         if (!userName.value) {
           err1.innerText = "Invalid user Name";
           err1.style.color = "red";
+          validation = false;
         } else {
           err1.innerText = "";
           err1.style.color = "none";
@@ -41,15 +72,28 @@
       }
 
       function emailFunVal() {
-        let email = document.querySelector("#email");
         let err2 = document.querySelector(".err2");
         let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!regex.test(email.value)) {
           err2.innerText = "Invalid email";
           err2.style.color = "red";
+          validation = false;
         } else {
           err2.innerText = "";
           err2.style.color = "none";
+        }
+      }
+      function passwordFunVal() {
+        let password = document.querySelector("#password");
+        let err3 = document.querySelector(".err3");
+
+        if (!password.value) {
+          err3.innerText = "Invalid password";
+          err3.style.color = "red";
+          validation = false;
+        } else {
+          err3.innerText = "";
+          err3.style.color = "none";
         }
       }
     </script>
