@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text"></h1>
+
+    <script>
+      let text = document.querySelector("#text");
+
+      let count = 10;
+
+      let id = setInterval(() => {
+           text.innerHTML = count;
+        if (count == 0) {
+          
+          text.innerHTML = "bet on javascript ";
+          clearInterval(id);
+        }
+     
+        count--;
+      }, 1000);
+    </script>
+  </body>
+</html>
