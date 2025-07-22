@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>local storage</h1>
+
+    <p>Name: <span id="text"></span></p>
+    <button id="btn">Get name</button>
+
+    <script>
+      let userNameData = JSON.parse(localStorage.getItem("userName")) || {
+        name: "superman",
+      };
+      let text = document.querySelector("#text");
+      let button = document.querySelector("#btn");
+      console.log(userNameData);
+
+      button.addEventListener("click", () => {
+        userNameData.name = "batman";
+        console.log(userNameData);
+        localStorage.setItem("userName", JSON.stringify(userNameData));
+        let storage = localStorage.getItem("userName");
+        console.log(storage);
+        show();
+      });
+
+      function show() {
+        text.innerHTML = userNameData.name;
+      }
+
+      show();
+    </script>
+  </body>
+</html>
