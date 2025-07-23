@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Todolist</h1>
+
+    <input value="" id="text" type="text" placeholder="Enter your task " />
+    <button id="btn">add task</button>
+
+    <div class="container"></div>
+
+    <script>
+      let text = document.querySelector("#text");
+      let btn = document.querySelector("#btn");
+      let container = document.querySelector(".container");
+
+      let todolist = JSON.parse(localStorage.getItem("todoData")) || [];
+
+      btn.addEventListener("click", () => {
+        if (!text.value.trim()) {
+          alert("you have first fill task");
+          return;
+        }
+        todolist.push(text.value);
+
+        // console.log(todolist);
+        localStorage.setItem("todoData", JSON.stringify(todolist));
+        show();
+        text.value = "";
+      });
+
+      function show() {
+        container.innerHTML = "";
+
+        todolist.forEach((item, index) => {
+          let list = document.createElement("p");
+          list.innerText = item;
+
+          container.append(list);
+        });
+      }
+
+      show();
+    </script>
+  </body>
+</html>
