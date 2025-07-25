@@ -7,6 +7,9 @@
   </head>
   <body>
     <h1>Todolist</h1>
+    <button id="clear">Clear Local</button>
+    <button id="remove">Remove local</button>
+    <a href="./home.html"> home page</a>
 
     <input value="" id="text" type="text" placeholder="Enter your task " />
     <button id="btn">add task</button>
@@ -17,6 +20,8 @@
       let text = document.querySelector("#text");
       let btn = document.querySelector("#btn");
       let container = document.querySelector(".container");
+      let clear = document.querySelector("#clear");
+      let remove = document.querySelector("#remove");
 
       let todolist = JSON.parse(localStorage.getItem("todoData")) || [];
 
@@ -37,12 +42,38 @@
         container.innerHTML = "";
 
         todolist.forEach((item, index) => {
+          let card = document.createElement("div");
           let list = document.createElement("p");
+          let delt = document.createElement("button");
+          delt.textContent = "delete";
+          let edit = document.createElement("button");
+          edit.textContent = "Edit";
           list.innerText = item;
 
-          container.append(list);
+          delt.addEventListener("click", () => {
+            todolist = todolist.filter((item, i) => index != i);
+            localStorage.setItem("todoData", JSON.stringify(todolist));
+            show();
+          });
+
+          edit.addEventListener("click", () => {
+            let editData = prompt(todolist[index]);
+            todolist[index] = editData;
+            localStorage.setItem("todoData", JSON.stringify(todolist));
+            show();
+          });
+
+          card.append(list, delt, edit);
+          container.append(card);
         });
       }
+
+      clear.addEventListener("click", () => {
+        localStorage.clear();
+      });
+      remove.addEventListener("click", () => {
+        localStorage.removeItem("todoData");
+      });
 
       show();
     </script>
