@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Dog image</h1>
+    <input id="search" type="text" name="" placeholder="Search by name" />
+    <button id="btn">Search</button>
+    <br />
+    <img id="image" src="" alt="" height="200px" />
+    <script>
+      let text = document.querySelector("#search");
+      let button = document.querySelector("#btn");
+      let image = document.querySelector("#image");
+      function show() {
+        if (text.value == "") {
+          alert("first you have to give name ");
+          return;
+        }
+        fetch(`https://dog.ceo/api/breed/${text.value}/images/random`)
+          .then((res) => res.json())
+          .then((res) => {
+            console.log(res);
+            image.src = res.message;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+
+      button.addEventListener("click", () => {
+        show();
+        text.value = ""
+      });
+    </script>
+  </body>
+</html>
