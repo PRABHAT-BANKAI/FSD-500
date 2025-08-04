@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Movie page</h1>
+
+    <div class="container"></div>
+
+    <script>
+
+      let container = document.querySelector(".container")
+      let url =
+        "https://my-json-server.typicode.com/horizon-code-academy/fake-movies-api/movies";
+
+      function fetchData() {
+        fetch(url)
+          .then((res) => res.json())
+          .then((res) => {
+            console.log(res);
+            show(res);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+
+      fetchData();
+
+      function show(array) {
+        array.forEach((element) => {
+          let card = document.createElement("div")
+          let title = document.createElement("p");
+          let year = document.createElement("p");
+          let runtime = document.createElement("p");
+          let image = document.createElement("img");
+         title.innerText = element.Title
+         image.style.height= "200px"
+         image.src = element.Poster
+         year.innerText = element.Year
+         runtime.innerText = element.Runtime
+
+
+card.style.border = "1px solid black"
+card.style.width = "200px"
+
+          card.append(image,title,year,runtime)
+          container.append(card)
+        });
+      }
+    </script>
+  </body>
+</html>
