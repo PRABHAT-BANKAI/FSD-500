@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: calc(100vh - 70px);
+  background-color: yellow;
+  display: flex;
+}
+
+.box1,
+.box2 {
+  height: 100%;
+  width: 50%;
+}
+
+.box1 {
+  background-color: red;
+}
+.box2 {
+  background-color: green;
+}
