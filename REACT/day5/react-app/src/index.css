@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container{
+  display: flex;
+  gap: 10px;
+}
+
+.box{
+height: 100px;
+width: 100px;
+border: 1px solid black;
+
+}
