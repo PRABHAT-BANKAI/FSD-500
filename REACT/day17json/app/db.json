@@ -1,0 +1,16 @@
+{
+  "todolist": [
+    {
+      "id": "1",
+      "task": "react"
+    },
+    {
+      "id": "f72c",
+      "task": "spiderman"
+    },
+    {
+      "id": "abca",
+      "task": "superman"
+    }
+  ]
+}
